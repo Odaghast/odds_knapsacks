@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "odds_knapsacks:lining"
+    },
+    "addition": {
+        "item": "minecraft:cactus"
+    },
+    "result": {
+        "item": "odds_knapsacks:knapsack_cactus"
+    }
+}

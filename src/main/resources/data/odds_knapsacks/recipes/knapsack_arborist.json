@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "odds_knapsacks:lining"
+    },
+    "addition": {
+        "item": "odds_knapsacks:wrap_arborist"
+    },
+    "result": {
+        "item": "odds_knapsacks:knapsack_arborist"
+    }
+}

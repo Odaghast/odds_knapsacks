@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:fences",
+    "#minecraft:walls",
+
+    {"id": "#c:glass_panes", "required": false}
+  ]
+}

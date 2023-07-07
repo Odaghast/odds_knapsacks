@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:milk_bucket",
+    "minecraft:cake",
+
+    "minecraft:bucket",
+    "minecraft:tipped_arrow",
+    "minecraft:totem_of_undying",
+    "minecraft:spyglass",
+    "minecraft:clock",
+    "minecraft:lead",
+    "minecraft:compass",
+    "minecraft:recovery_compass",
+    "minecraft:arrow"
+  ]
+}
