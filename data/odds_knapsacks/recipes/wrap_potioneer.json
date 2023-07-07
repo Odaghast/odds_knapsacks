@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " W ",
+        "#L#",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass_bottle"
+        },
+        "W": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "item": "odds_knapsacks:wrap_leather"
+        }
+    },
+    "result": {
+        "item": "odds_knapsacks:wrap_potioneer",
+        "count": 1
+    }
+}

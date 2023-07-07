@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " W ",
+        "#L#",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "tag": "odds_knapsacks:knapsack_herbalist"
+        },
+        "W": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "item": "odds_knapsacks:wrap_leather"
+        }
+    },
+    "result": {
+        "item": "odds_knapsacks:wrap_herbalist",
+        "count": 1
+    }
+}
