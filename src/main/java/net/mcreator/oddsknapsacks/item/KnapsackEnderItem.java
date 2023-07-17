@@ -20,6 +20,8 @@ public class KnapsackEnderItem extends KnapsackItem{
     public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
         InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 
+        if (world.isClientSide) return ar;
+
         //does NOT increase ender chests open stat (its not an ender chest so why would it)
         entity.openMenu(new SimpleMenuProvider((i, inventory, player) -> {
             return ChestMenu.threeRows(i, inventory, player.getEnderChestInventory());
