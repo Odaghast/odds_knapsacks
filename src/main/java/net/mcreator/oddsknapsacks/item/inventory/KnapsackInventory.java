@@ -11,10 +11,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 
-import net.fabricmc.api.Environment;
-import net.fabricmc.api.EnvType;
-
-@Environment(EnvType.CLIENT)
 public class KnapsackInventory implements WorldlyContainer {
 	private final ItemStack stack;
 	private final NonNullList<ItemStack> items;
