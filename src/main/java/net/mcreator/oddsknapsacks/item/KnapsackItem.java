@@ -56,8 +56,6 @@ public class KnapsackItem extends Item {
 
 		entity.playSound(this.knapsackType.getSound(true), 1.0F, 0.8F + entity.getLevel().getRandom().nextFloat() * 0.4F);
 
-		if (world.isClientSide) return ar;
-
 		entity.openMenu(new ExtendedScreenHandlerFactory() {
 			@Override
 			public AbstractContainerMenu createMenu(int syncId, Inventory inventory, Player player) {
