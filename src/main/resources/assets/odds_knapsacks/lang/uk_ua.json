@@ -1,0 +1,44 @@
+{
+  "item.odds_knapsacks.knapsack": "Клунок",
+  "item.odds_knapsacks.knapsack_iron": "Залізний клунок",
+  "item.odds_knapsacks.knapsack_gold": "Золотий клунок",
+  "item.odds_knapsacks.knapsack_diamond": "Діамантовий клунок",
+  "item.odds_knapsacks.knapsack_netherite": "Незеритовий клунок",
+
+  "item.odds_knapsacks.knapsack_cactus": "Колючий клунок",
+  "item.odds_knapsacks.knapsack_ender": "Клунок Енду",
+  "item.odds_knapsacks.knapsack_adventure": "Клунок авантюриста",
+  "item.odds_knapsacks.knapsack_miner": "Клунок рудокопа",
+  "item.odds_knapsacks.knapsack_herbalist": "Клунок знахаря",
+  "item.odds_knapsacks.knapsack_arborist": "Клунок лісоруба",
+  "item.odds_knapsacks.knapsack_builder": "Клунок будівельника",
+  "item.odds_knapsacks.knapsack_potioneer": "Клунок зіллєвара",
+
+  "item.odds_knapsacks.lining": "Підкладка",
+  "item.odds_knapsacks.needle_thread": "Голка та нитка",
+
+  "item.odds_knapsacks.wrap_leather": "Шкіряна обшивка",
+  "item.odds_knapsacks.wrap_gold": "Золота обшивка",
+  "item.odds_knapsacks.wrap_iron": "Залізна обшивка",
+  "item.odds_knapsacks.wrap_diamond": "Діамантова обшивка",
+  "item.odds_knapsacks.wrap_netherite": "Незеритова обшивка",
+
+  "item.odds_knapsacks.wrap_adventure": "Обшивка авантюриста",
+  "item.odds_knapsacks.wrap_miner": "Обшивка рудокопа",
+  "item.odds_knapsacks.wrap_herbalist": "Обшивка знахаря",
+  "item.odds_knapsacks.wrap_arborist": "Обшивка лісоруба",
+  "item.odds_knapsacks.wrap_builder": "Обшивка будівельника",
+  "item.odds_knapsacks.wrap_potioneer": "Обшивка зіллєвара",
+
+  "item.odds_knapsacks.hover.cactus": "§2Видаляє предмети!",
+
+  "item.odds_knapsacks.hover.holds_all": "Тримає всі предмети!",
+  "item.odds_knapsacks.hover.adventure": "Тримає їжу й інструменти!",
+  "item.odds_knapsacks.hover.miner": "Тримає руди та мінерали!",
+  "item.odds_knapsacks.hover.herbalist": "Тримає культури, трави та квіти!",
+  "item.odds_knapsacks.hover.arborist": "Тримає всі предмети дерев!",
+  "item.odds_knapsacks.hover.builder": "Тримає всі будівельні блоки!",
+  "item.odds_knapsacks.hover.potioneer": "Тримає зілля та їх інгредієнти!",
+
+  "itemGroup.odds_knapsacks.knapsacks": "Odd's Knapsacks"
+}
