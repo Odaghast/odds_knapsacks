@@ -123,7 +123,7 @@ public class KnapsackMenu extends AbstractContainerMenu {
 		if (this.knapsackType.typeID.equals("CACTUS")) {
 			this.inventory.voidContent();
 		}
-		playerIn.playSound(this.knapsackType.getSound(false), 1.0F, 0.8F + playerIn.getLevel().getRandom().nextFloat() * 0.4F);
+		playerIn.playSound(this.knapsackType.getSound(false), 1.0F, 0.8F + playerIn.getRandom().nextFloat() * 0.4F);
 		super.removed(playerIn);
 	}
 
