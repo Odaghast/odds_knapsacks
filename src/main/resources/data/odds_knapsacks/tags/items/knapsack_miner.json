@@ -16,6 +16,7 @@
     "minecraft:amethyst_shard",
     "minecraft:amethyst_block",
     "minecraft:clay_ball",
+    "minecraft:clay",
 
     "minecraft:gold_nugget",
 
@@ -28,7 +29,9 @@
 
     "minecraft:ancient_debris",
 
+    "minecraft:coal_block",
+
     {"id": "#c:ores", "required": false},
-    {"id": "#c:coals", "required": false}
+    {"id": "#c:coal", "required": false}
   ]
 }
