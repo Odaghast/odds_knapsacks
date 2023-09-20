@@ -1,10 +1,13 @@
 {
-    "type": "minecraft:smithing",
+    "type": "minecraft:smithing_transform",
     "base": {
         "item": "odds_knapsacks:lining"
     },
     "addition": {
         "item": "odds_knapsacks:wrap_builder"
+    },
+    "template": {
+        "item": "odds_knapsacks:needle_thread"
     },
     "result": {
         "item": "odds_knapsacks:knapsack_builder"
