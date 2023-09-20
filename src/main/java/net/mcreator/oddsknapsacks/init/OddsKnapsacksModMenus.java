@@ -5,6 +5,7 @@
 package net.mcreator.oddsknapsacks.init;
 
 import net.mcreator.oddsknapsacks.world.inventory.KnapsackMenu;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
@@ -23,12 +24,12 @@ public class OddsKnapsacksModMenus {
 	public static MenuType<KnapsackMenu> CACTUS;
 
 	public static void load() {
-		SMALL = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "small"), new ExtendedScreenHandlerType<>(KnapsackMenu::small));
-		MEDIUM = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "medium"), new ExtendedScreenHandlerType<>(KnapsackMenu::medium));
-		BIG = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "big"), new ExtendedScreenHandlerType<>(KnapsackMenu::big));
-		LARGE = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "large"), new ExtendedScreenHandlerType<>(KnapsackMenu::large));
-		GRAND = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "grand"), new ExtendedScreenHandlerType<>(KnapsackMenu::grand));
+		SMALL = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "small"), new ExtendedScreenHandlerType<>(KnapsackMenu::small));
+		MEDIUM = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "medium"), new ExtendedScreenHandlerType<>(KnapsackMenu::medium));
+		BIG = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "big"), new ExtendedScreenHandlerType<>(KnapsackMenu::big));
+		LARGE = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "large"), new ExtendedScreenHandlerType<>(KnapsackMenu::large));
+		GRAND = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "grand"), new ExtendedScreenHandlerType<>(KnapsackMenu::grand));
 
-		CACTUS = Registry.register(Registry.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "cactus"), new ExtendedScreenHandlerType<>(KnapsackMenu::cactus));
+		CACTUS = Registry.register(BuiltInRegistries.MENU, new ResourceLocation(OddsKnapsacksMod.MODID, "cactus"), new ExtendedScreenHandlerType<>(KnapsackMenu::cactus));
 	}
 }
