@@ -54,7 +54,7 @@ public class KnapsackItem extends Item {
 		ItemStack itemstack = ar.getObject();
 		KnapsackType type = this.knapsackType;
 
-		entity.playSound(this.knapsackType.getSound(true), 1.0F, 0.8F + entity.getLevel().getRandom().nextFloat() * 0.4F);
+		entity.playSound(this.knapsackType.getSound(true), 1.0F, 0.8F + entity.getRandom().nextFloat() * 0.4F);
 
 		entity.openMenu(new ExtendedScreenHandlerFactory() {
 			@Override
