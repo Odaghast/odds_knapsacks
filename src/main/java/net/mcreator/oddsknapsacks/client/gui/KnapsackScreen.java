@@ -3,6 +3,7 @@ package net.mcreator.oddsknapsacks.client.gui;
 
 import net.mcreator.oddsknapsacks.OddsKnapsacksMod;
 import net.mcreator.oddsknapsacks.core.KnapsackType;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -40,8 +41,6 @@ public class KnapsackScreen extends AbstractContainerScreen<KnapsackMenu> {
 
 	public KnapsackScreen(KnapsackType type, KnapsackMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
-		//this.world = container.world;
-		//this.entity = container.entity;
 		this.imageWidth = type.textureWidth;
 		this.imageHeight = type.textureHeight;
 		this.texture = new ResourceLocation(OddsKnapsacksMod.MODID+":textures/screens/"+type.textureID+".png");
@@ -50,19 +49,19 @@ public class KnapsackScreen extends AbstractContainerScreen<KnapsackMenu> {
 
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0,0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 
@@ -81,18 +80,7 @@ public class KnapsackScreen extends AbstractContainerScreen<KnapsackMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-	}
+	protected void renderLabels(GuiGraphics guiGraphics, int i, int j) {
 
-	@Override
-	public void onClose() {
-		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
-	}
-
-	@Override
-	public void init() {
-		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 	}
 }
